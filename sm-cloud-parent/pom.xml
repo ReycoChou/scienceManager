@@ -10,6 +10,14 @@
     <modules>
         <module>sm-cloud-eureka-one</module>
         <module>eureka-client-ping-service</module>
+        <module>sm-cloud-api</module>
+        <module>sm-cloud-product</module>
+        <module>sm-cloud-consumer</module>
+        <module>sm-cloud-product-two</module>
+        <module>sm-cloud-product-three</module>
+        <module>sm-cloud-eureka-two</module>
+        <module>eureka-client-pong-service</module>
+        <module>sm-cloud-primaryIdProduct</module>
     </modules>
 
     <packaging>pom</packaging>

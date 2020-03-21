@@ -1,12 +1,17 @@
 package com.dayunwu.manage;
 
+import com.dayunwu.manage.service.MailService;
 import com.netflix.appinfo.InstanceInfo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.server.event.*;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 @Component
 public class EurekaServerListener {
+
+    @Autowired
+    private MailService mailServiceImpl;
 
     @EventListener
     public void listen(EurekaInstanceCanceledEvent event) {

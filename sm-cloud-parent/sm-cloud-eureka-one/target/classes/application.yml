@@ -2,6 +2,13 @@ server:
   port: 6001 # 服务端口
 
 
+spring:
+  mail:
+    default-encoding: UTF-8
+    host: smtp.163.com
+    password: FQWQSJZSBMDSBANS # 授权码
+    username: reycochou@163.com
+
 #spring:
 #  security:
 #    user:

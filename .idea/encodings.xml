@@ -2,6 +2,13 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/eureka-client-ping-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/eureka-client-pong-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-IdProduct/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-three/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-two/src/main/java" charset="UTF-8" />
   </component>
 </project>

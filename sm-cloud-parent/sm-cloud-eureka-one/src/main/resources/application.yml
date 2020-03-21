@@ -5,9 +5,9 @@ server:
 spring:
   mail:
     default-encoding: UTF-8
-    host:
-    password:
-    username:
+    host: smtp.163.com
+    password: FQWQSJZSBMDSBANS # 授权码，不是邮箱登录密码
+    username: reycochou@163.com
 
 #spring:
 #  security:

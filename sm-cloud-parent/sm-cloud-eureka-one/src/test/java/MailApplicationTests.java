@@ -16,10 +16,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class MailApplicationTests {
 
     @Autowired
-    private MailServiceImpl mailServiceImpl;
+    private MailService mailServiceImpl;
 
     @Test
-    public void test(){
-
+    public void testSimpleMail(){
+        mailServiceImpl.sendSimpleMail("1046491327@qq.com","简单邮件测试","myfirst email:hello world");
     }
 }
