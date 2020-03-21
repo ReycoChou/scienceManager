@@ -10,7 +10,7 @@
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List"/>
     from t_product
     where id = #{id,jdbcType=INTEGER}
   </select>
@@ -55,4 +55,5 @@
     set name = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
 </mapper>
