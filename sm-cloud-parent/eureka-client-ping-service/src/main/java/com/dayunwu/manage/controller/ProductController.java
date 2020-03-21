@@ -5,6 +5,9 @@ import com.dayunwu.manage.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.rmi.PortableRemoteObject;
+import java.util.List;
+
 /**
  * @author： reyco
  * @date 2020/3/22
@@ -21,10 +24,13 @@ public class ProductController {
     }
 
 
-    @RequestMapping(value = "/product/get/{id}", method = RequestMethod.GET)
-    public Product get(@PathVariable("id") int id){
+    @RequestMapping(value = "/product/get", method = RequestMethod.GET)
+    public Product get(@RequestParam int id){
         return productService.get(id);
     }
 
-
+    @RequestMapping(value = "/product/list", method = RequestMethod.GET)
+    public List<Product> list(){
+        return productService.list();
+    }
 }
