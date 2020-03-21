@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/eureka-client-ping-service/eureka-client-ping-service.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/eureka-client-ping-service/eureka-client-ping-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-one/sm-cloud-eureka-one.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-one/sm-cloud-eureka-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-parent.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-parent.iml" />
+    </modules>
+  </component>
+</project>
