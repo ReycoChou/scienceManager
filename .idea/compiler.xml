@@ -7,14 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client-pong-service" />
-        <module name="sm-cloud-IdProduct" />
+        <module name="sm-cloud-gateway" />
         <module name="sm-cloud-consumer" />
         <module name="sm-cloud-api" />
         <module name="sm-cloud-eureka-one" />
         <module name="sm-cloud-product-three" />
-        <module name="sm-cloud-product-two" />
-        <module name="sm-cloud-eureka-two" />
+        <module name="sm-cloud-IdProduct" />
         <module name="eureka-client-ping-service" />
+        <module name="sm-cloud-eureka-two" />
+        <module name="sm-cloud-product-two" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +25,7 @@
       <module name="sm-cloud-consumer" target="1.8" />
       <module name="sm-cloud-eureka-one" target="1.8" />
       <module name="sm-cloud-eureka-two" target="1.8" />
+      <module name="sm-cloud-gateway" target="1.8" />
       <module name="sm-cloud-IdProduct" target="1.8" />
       <module name="sm-cloud-parent" target="1.8" />
       <module name="sm-cloud-product-three" target="1.8" />
@@ -39,6 +41,7 @@
       <module name="sm-cloud-consumer" options="-parameters" />
       <module name="sm-cloud-eureka-one" options="-parameters" />
       <module name="sm-cloud-eureka-two" options="-parameters" />
+      <module name="sm-cloud-gateway" options="-parameters" />
       <module name="sm-cloud-product-three" options="-parameters" />
       <module name="sm-cloud-product-two" options="-parameters" />
     </option>

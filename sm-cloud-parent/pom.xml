@@ -18,6 +18,7 @@
         <module>sm-cloud-eureka-two</module>
         <module>eureka-client-pong-service</module>
         <module>sm-cloud-primaryIdProduct</module>
+        <module>sm-cloud-gateway</module>
     </modules>
 
     <packaging>pom</packaging>

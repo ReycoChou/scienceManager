@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-consumer/sm-cloud-consumer.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-consumer/sm-cloud-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-one/sm-cloud-eureka-one.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-one/sm-cloud-eureka-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-two/sm-cloud-eureka-two.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-two/sm-cloud-eureka-two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-gateway/sm-cloud-gateway.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-gateway/sm-cloud-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-parent.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-one/sm-cloud-product-one.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-one/sm-cloud-product-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-three/sm-cloud-product-three.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-three/sm-cloud-product-three.iml" />
