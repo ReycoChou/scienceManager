@@ -5,11 +5,14 @@
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/eureka-client-pong-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-IdProduct/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-async/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-one/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-two/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-hystrix-dashboard/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-three/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-redis/src/main/java" charset="UTF-8" />
   </component>
 </project>

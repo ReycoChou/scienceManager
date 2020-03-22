@@ -2,6 +2,8 @@ package com.dayunwu.manage.controller;
 
 import com.dayunwu.manage.pojo.Product;
 import com.dayunwu.manage.service.ProductService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import org.bouncycastle.cms.PasswordRecipientId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,13 +26,22 @@ public class ProductController {
         return productService.add(product);
     }
 
+    @HystrixCommand(fallbackMethod = "get_hystrix")
     @RequestMapping(value = "/product/get/{id}", method = RequestMethod.GET)
     public Product get(@PathVariable("id") int id){
+        if(id < 0){
+            throw new RuntimeException();
+        }
         return productService.get(id);
     }
 
     @RequestMapping(value = "/product/list", method = RequestMethod.GET)
     public List<Product> list(){
         return productService.list();
+    }
+
+
+    public Product get_hystrix(@PathVariable("id") int id){
+        return new Product(id, "error");
     }
 }

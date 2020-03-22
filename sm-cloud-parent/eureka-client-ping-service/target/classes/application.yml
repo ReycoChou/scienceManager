@@ -32,3 +32,9 @@ eureka:
     prefer-ip-address: true #访问路径就会显示成IP地址
     lease-expiration-duration-in-seconds: 30 # 租期到期时间
     lease-renewal-interval-in-seconds: 10 # 租期更新时间间隔
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

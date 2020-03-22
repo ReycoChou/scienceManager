@@ -19,6 +19,9 @@
         <module>eureka-client-pong-service</module>
         <module>sm-cloud-primaryIdProduct</module>
         <module>sm-cloud-gateway</module>
+        <module>sm-cloud-async</module>
+        <module>sm-cloud-redis</module>
+        <module>sm-cloud-hystrix-dashboard</module>
     </modules>
 
     <packaging>pom</packaging>

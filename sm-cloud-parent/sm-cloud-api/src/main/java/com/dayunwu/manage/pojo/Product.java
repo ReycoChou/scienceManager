@@ -20,4 +20,9 @@ public class Product {
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
+
+    public Product(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

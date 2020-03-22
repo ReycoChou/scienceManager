@@ -1,6 +1,7 @@
 package com.dayunwu.manage.service;
 
 import com.dayunwu.manage.pojo.Product;
+import com.dayunwu.manage.service.hystrix.ProduceServiceHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +16,7 @@ import java.util.List;
  * @date 2020/3/22
  */
 @Service
-@FeignClient(value = "MICROSERVICE-PRODUCT")
+@FeignClient(value = "MICROSERVICE-PRODUCT", fallback = ProduceServiceHystrix.class)
 public interface ProductService {
 
     @RequestMapping(value = "/product/get/{id}", method = RequestMethod.GET)

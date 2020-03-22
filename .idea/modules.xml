@@ -6,14 +6,17 @@
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/eureka-client-pong-service/eureka-client-pong-service.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/eureka-client-pong-service/eureka-client-pong-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-IdProduct/sm-cloud-IdProduct.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-IdProduct/sm-cloud-IdProduct.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-api/sm-cloud-api.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-api/sm-cloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-async/sm-cloud-async.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-async/sm-cloud-async.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-consumer/sm-cloud-consumer.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-consumer/sm-cloud-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-one/sm-cloud-eureka-one.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-one/sm-cloud-eureka-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-two/sm-cloud-eureka-two.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-eureka-two/sm-cloud-eureka-two.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-gateway/sm-cloud-gateway.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-gateway/sm-cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-hystrix-dashboard/sm-cloud-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-hystrix-dashboard/sm-cloud-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-parent.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-one/sm-cloud-product-one.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-one/sm-cloud-product-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-three/sm-cloud-product-three.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-three/sm-cloud-product-three.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-two/sm-cloud-product-two.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-product-two/sm-cloud-product-two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-cloud-parent/sm-cloud-redis/sm-cloud-redis.iml" filepath="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-redis/sm-cloud-redis.iml" />
     </modules>
   </component>
 </project>
