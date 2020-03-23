@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-client-pong-service" />
-        <module name="sm-cloud-gateway" />
-        <module name="sm-cloud-consumer" />
-        <module name="sm-cloud-redis" />
         <module name="sm-cloud-hystrix-dashboard" />
-        <module name="sm-cloud-api" />
-        <module name="sm-cloud-eureka-one" />
         <module name="sm-cloud-product-three" />
-        <module name="sm-cloud-IdProduct" />
-        <module name="eureka-client-ping-service" />
-        <module name="sm-cloud-eureka-two" />
+        <module name="sm-cloud-authTest" />
+        <module name="sm-cloud-sso" />
+        <module name="sm-cloud-eureka-one" />
+        <module name="eureka-client-pong-service" />
+        <module name="sm-cloud-api" />
+        <module name="sm-cloud-gateway" />
+        <module name="sm-cloud-auth" />
         <module name="sm-cloud-async" />
+        <module name="sm-cloud-eureka-two" />
+        <module name="eureka-client-ping-service" />
+        <module name="sm-cloud-IdProduct" />
+        <module name="sm-cloud-consumer" />
         <module name="sm-cloud-product-two" />
       </profile>
     </annotationProcessing>
@@ -26,6 +28,8 @@
       <module name="eureka-client-pong-service" target="1.8" />
       <module name="sm-cloud-api" target="1.8" />
       <module name="sm-cloud-async" target="1.8" />
+      <module name="sm-cloud-auth" target="1.8" />
+      <module name="sm-cloud-authTest" target="1.8" />
       <module name="sm-cloud-consumer" target="1.8" />
       <module name="sm-cloud-eureka-one" target="1.8" />
       <module name="sm-cloud-eureka-two" target="1.8" />
@@ -36,6 +40,7 @@
       <module name="sm-cloud-product-three" target="1.8" />
       <module name="sm-cloud-product-two" target="1.8" />
       <module name="sm-cloud-redis" target="1.8" />
+      <module name="sm-cloud-sso" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -45,6 +50,8 @@
       <module name="sm-cloud-IdProduct" options="-parameters" />
       <module name="sm-cloud-api" options="-parameters" />
       <module name="sm-cloud-async" options="-parameters" />
+      <module name="sm-cloud-auth" options="-parameters" />
+      <module name="sm-cloud-authTest" options="-parameters" />
       <module name="sm-cloud-consumer" options="-parameters" />
       <module name="sm-cloud-eureka-one" options="-parameters" />
       <module name="sm-cloud-eureka-two" options="-parameters" />
@@ -53,6 +60,7 @@
       <module name="sm-cloud-product-three" options="-parameters" />
       <module name="sm-cloud-product-two" options="-parameters" />
       <module name="sm-cloud-redis" options="-parameters" />
+      <module name="sm-cloud-sso" options="-parameters" />
     </option>
   </component>
 </project>

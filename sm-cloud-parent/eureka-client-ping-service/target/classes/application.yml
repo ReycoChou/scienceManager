@@ -1,6 +1,10 @@
 server:
   port: 8001
 
+  ssl: # https
+    key-store: classpath:reyco.key
+    key-store-password: reycokey
+    key-password: reycokey
 
 spring:
   application:
@@ -38,3 +42,5 @@ management:
     web:
       exposure:
         include: hystrix.stream
+
+

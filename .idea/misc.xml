@@ -6,6 +6,12 @@
         <option value="$PROJECT_DIR$/sm-cloud-parent/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/sm-cloud-parent/sm-cloud-sso/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectResources">
     <resource url="http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" location="$PROJECT_DIR$" />

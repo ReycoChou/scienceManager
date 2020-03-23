@@ -22,6 +22,9 @@
         <module>sm-cloud-async</module>
         <module>sm-cloud-redis</module>
         <module>sm-cloud-hystrix-dashboard</module>
+        <module>sm-cloud-sso</module>
+        <module>sm-cloud-auth</module>
+        <module>sm-cloud-authTest</module>
     </modules>
 
     <packaging>pom</packaging>
