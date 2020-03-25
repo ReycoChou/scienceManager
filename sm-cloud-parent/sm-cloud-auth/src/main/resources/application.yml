@@ -29,4 +29,4 @@ eureka:
 
 
 server:
-  port: 9090
+  port: 2001

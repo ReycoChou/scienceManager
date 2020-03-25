@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dayunwu.manage.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.dayunwu.manage.pojo.User" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="photo" property="photo" jdbcType="VARCHAR" />
+    <result column="grade" property="grade" jdbcType="INTEGER" />
+    <result column="college" property="college" jdbcType="INTEGER" />
+    <result column="number" property="number" jdbcType="VARCHAR" />
+    <result column="foreigner_name" property="foreignerName" jdbcType="VARCHAR" />
+    <result column="birthday" property="birthday" jdbcType="TIMESTAMP" />
+    <result column="sex" property="sex" jdbcType="TINYINT" />
+    <result column="team" property="team" jdbcType="VARCHAR" />
+    <result column="company" property="company" jdbcType="VARCHAR" />
+    <result column="education" property="education" jdbcType="TINYINT" />
+    <result column="degree" property="degree" jdbcType="VARCHAR" />
+    <result column="school" property="school" jdbcType="VARCHAR" />
+    <result column="graduation_time" property="graduationTime" jdbcType="TIMESTAMP" />
+    <result column="direction" property="direction" jdbcType="VARCHAR" />
+    <result column="is_tutor" property="isTutor" jdbcType="TINYINT" />
+    <result column="is_advisor" property="isAdvisor" jdbcType="TINYINT" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="profession" property="profession" jdbcType="VARCHAR" />
+    <result column="teacher" property="teacher" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="TINYINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="amount" property="amount" jdbcType="DECIMAL" />
+    <result column="valid" property="valid" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, password, name, photo, grade, college, number, foreigner_name, birthday, sex, 
+    team, company, education, degree, school, graduation_time, direction, is_tutor, is_advisor, 
+    phone, email, profession, teacher, type, status, amount, valid, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dayunwu.manage.pojo.User" >
+    insert into t_user (id, password, name, 
+      photo, grade, college, 
+      number, foreigner_name, birthday, 
+      sex, team, company, 
+      education, degree, school, 
+      graduation_time, direction, is_tutor, 
+      is_advisor, phone, email, 
+      profession, teacher, type, 
+      status, amount, valid, 
+      create_time, update_time)
+    values (#{id,jdbcType=INTEGER}, #{password,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{photo,jdbcType=VARCHAR}, #{grade,jdbcType=INTEGER}, #{college,jdbcType=INTEGER}, 
+      #{number,jdbcType=VARCHAR}, #{foreignerName,jdbcType=VARCHAR}, #{birthday,jdbcType=TIMESTAMP}, 
+      #{sex,jdbcType=TINYINT}, #{team,jdbcType=VARCHAR}, #{company,jdbcType=VARCHAR}, 
+      #{education,jdbcType=TINYINT}, #{degree,jdbcType=VARCHAR}, #{school,jdbcType=VARCHAR}, 
+      #{graduationTime,jdbcType=TIMESTAMP}, #{direction,jdbcType=VARCHAR}, #{isTutor,jdbcType=TINYINT}, 
+      #{isAdvisor,jdbcType=TINYINT}, #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{profession,jdbcType=VARCHAR}, #{teacher,jdbcType=VARCHAR}, #{type,jdbcType=TINYINT}, 
+      #{status,jdbcType=TINYINT}, #{amount,jdbcType=DECIMAL}, #{valid,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dayunwu.manage.pojo.User" >
+    insert into t_user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="photo != null" >
+        photo,
+      </if>
+      <if test="grade != null" >
+        grade,
+      </if>
+      <if test="college != null" >
+        college,
+      </if>
+      <if test="number != null" >
+        number,
+      </if>
+      <if test="foreignerName != null" >
+        foreigner_name,
+      </if>
+      <if test="birthday != null" >
+        birthday,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="team != null" >
+        team,
+      </if>
+      <if test="company != null" >
+        company,
+      </if>
+      <if test="education != null" >
+        education,
+      </if>
+      <if test="degree != null" >
+        degree,
+      </if>
+      <if test="school != null" >
+        school,
+      </if>
+      <if test="graduationTime != null" >
+        graduation_time,
+      </if>
+      <if test="direction != null" >
+        direction,
+      </if>
+      <if test="isTutor != null" >
+        is_tutor,
+      </if>
+      <if test="isAdvisor != null" >
+        is_advisor,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="profession != null" >
+        profession,
+      </if>
+      <if test="teacher != null" >
+        teacher,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="amount != null" >
+        amount,
+      </if>
+      <if test="valid != null" >
+        valid,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="photo != null" >
+        #{photo,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null" >
+        #{grade,jdbcType=INTEGER},
+      </if>
+      <if test="college != null" >
+        #{college,jdbcType=INTEGER},
+      </if>
+      <if test="number != null" >
+        #{number,jdbcType=VARCHAR},
+      </if>
+      <if test="foreignerName != null" >
+        #{foreignerName,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="team != null" >
+        #{team,jdbcType=VARCHAR},
+      </if>
+      <if test="company != null" >
+        #{company,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null" >
+        #{education,jdbcType=TINYINT},
+      </if>
+      <if test="degree != null" >
+        #{degree,jdbcType=VARCHAR},
+      </if>
+      <if test="school != null" >
+        #{school,jdbcType=VARCHAR},
+      </if>
+      <if test="graduationTime != null" >
+        #{graduationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="direction != null" >
+        #{direction,jdbcType=VARCHAR},
+      </if>
+      <if test="isTutor != null" >
+        #{isTutor,jdbcType=TINYINT},
+      </if>
+      <if test="isAdvisor != null" >
+        #{isAdvisor,jdbcType=TINYINT},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="profession != null" >
+        #{profession,jdbcType=VARCHAR},
+      </if>
+      <if test="teacher != null" >
+        #{teacher,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=TINYINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="amount != null" >
+        #{amount,jdbcType=DECIMAL},
+      </if>
+      <if test="valid != null" >
+        #{valid,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dayunwu.manage.pojo.User" >
+    update t_user
+    <set >
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="photo != null" >
+        photo = #{photo,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null" >
+        grade = #{grade,jdbcType=INTEGER},
+      </if>
+      <if test="college != null" >
+        college = #{college,jdbcType=INTEGER},
+      </if>
+      <if test="number != null" >
+        number = #{number,jdbcType=VARCHAR},
+      </if>
+      <if test="foreignerName != null" >
+        foreigner_name = #{foreignerName,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        birthday = #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="team != null" >
+        team = #{team,jdbcType=VARCHAR},
+      </if>
+      <if test="company != null" >
+        company = #{company,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null" >
+        education = #{education,jdbcType=TINYINT},
+      </if>
+      <if test="degree != null" >
+        degree = #{degree,jdbcType=VARCHAR},
+      </if>
+      <if test="school != null" >
+        school = #{school,jdbcType=VARCHAR},
+      </if>
+      <if test="graduationTime != null" >
+        graduation_time = #{graduationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="direction != null" >
+        direction = #{direction,jdbcType=VARCHAR},
+      </if>
+      <if test="isTutor != null" >
+        is_tutor = #{isTutor,jdbcType=TINYINT},
+      </if>
+      <if test="isAdvisor != null" >
+        is_advisor = #{isAdvisor,jdbcType=TINYINT},
+      </if>
+      <if test="phone != null" >
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="profession != null" >
+        profession = #{profession,jdbcType=VARCHAR},
+      </if>
+      <if test="teacher != null" >
+        teacher = #{teacher,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=TINYINT},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="amount != null" >
+        amount = #{amount,jdbcType=DECIMAL},
+      </if>
+      <if test="valid != null" >
+        valid = #{valid,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dayunwu.manage.pojo.User" >
+    update t_user
+    set password = #{password,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      photo = #{photo,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=INTEGER},
+      college = #{college,jdbcType=INTEGER},
+      number = #{number,jdbcType=VARCHAR},
+      foreigner_name = #{foreignerName,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=TIMESTAMP},
+      sex = #{sex,jdbcType=TINYINT},
+      team = #{team,jdbcType=VARCHAR},
+      company = #{company,jdbcType=VARCHAR},
+      education = #{education,jdbcType=TINYINT},
+      degree = #{degree,jdbcType=VARCHAR},
+      school = #{school,jdbcType=VARCHAR},
+      graduation_time = #{graduationTime,jdbcType=TIMESTAMP},
+      direction = #{direction,jdbcType=VARCHAR},
+      is_tutor = #{isTutor,jdbcType=TINYINT},
+      is_advisor = #{isAdvisor,jdbcType=TINYINT},
+      phone = #{phone,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      profession = #{profession,jdbcType=VARCHAR},
+      teacher = #{teacher,jdbcType=VARCHAR},
+      type = #{type,jdbcType=TINYINT},
+      status = #{status,jdbcType=TINYINT},
+      amount = #{amount,jdbcType=DECIMAL},
+      valid = #{valid,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

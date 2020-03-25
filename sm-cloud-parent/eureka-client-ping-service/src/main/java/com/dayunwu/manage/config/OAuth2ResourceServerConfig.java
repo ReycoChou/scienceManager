@@ -1,6 +1,7 @@
-package com.dayunwu.manage.server.resource;
+package com.dayunwu.manage.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
@@ -8,32 +9,23 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Res
 
 /**
  * @author： reyco
- * @date 2020/3/22
+ * @date 2020/3/24
  */
 @Configuration
 @EnableResourceServer
 public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 
-    /**
-     * 设置微服务认证信息
-     * @param resources
-     * @throws Exception
-     */
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
-        resources.resourceId("order-service"); // 这里设置和微服务名字相同
+        resources.resourceId("order-service");
     }
 
-
-    /**
-     * 控制权限
-     * @param http
-     * @throws Exception
-     */
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers().permitAll();
+                .antMatchers(HttpMethod.POST).access("#oauth2.hasScope('write')")
+                .antMatchers(HttpMethod.GET).access("#oauth2.hasScope('read')")
+                .anyRequest().authenticated();
     }
 }

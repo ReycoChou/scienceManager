@@ -15,8 +15,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 /**
- * @author jojo
- *
+ * @author reyco
+ * @date 2020/3/22
  */
 @Configuration
 @EnableWebSecurity

@@ -19,8 +19,8 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 
 /**
- * @author jojo
- *
+ * @author reyco
+ * @date 2020/3/22
  */
 @Configuration
 @EnableAuthorizationServer
