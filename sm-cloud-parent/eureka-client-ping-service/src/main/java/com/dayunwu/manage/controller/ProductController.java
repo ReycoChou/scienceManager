@@ -30,8 +30,8 @@ public class ProductController {
 
     @HystrixCommand(fallbackMethod = "get_hystrix")
     @RequestMapping(value = "/product/get/{id}", method = RequestMethod.GET)
-    public Product get(@PathVariable("id") int id, @AuthenticationPrincipal String user){
-        System.out.println("username : " + user);
+    public Product get(@PathVariable("id") int id, @AuthenticationPrincipal  User user){
+        System.out.println("username : " + user.getName());
         if(id < 0){
             throw new RuntimeException();
         }
@@ -44,7 +44,7 @@ public class ProductController {
     }
 
 
-    public Product get_hystrix(@PathVariable("id") int id, @AuthenticationPrincipal String user){
+    public Product get_hystrix(@PathVariable("id") int id, @AuthenticationPrincipal User user){
         System.out.println(user);
         return new Product(id, "error");
     }
