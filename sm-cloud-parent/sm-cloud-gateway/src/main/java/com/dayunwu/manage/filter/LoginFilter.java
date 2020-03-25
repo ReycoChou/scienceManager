@@ -14,7 +14,6 @@ import java.io.IOException;
  * @author： reyco
  * @date 2020/3/22
  */
-@Component
 public class LoginFilter extends ZuulFilter {
 
     private final Logger LOGGER = LoggerFactory.getLogger(LoginFilter.class);

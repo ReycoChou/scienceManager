@@ -21,7 +21,10 @@ eureka:
 
 zuul:
   routes:
-   povider-product:
-     path: /product/**
-     serviceId: microservice-product
-     stripPrefix: false
+    user:
+      url: http://localhost:9090
+    token:
+      url: http://localhost:2001
+    order:
+      url: http://localhost:8001
+  sensitive-headers:
